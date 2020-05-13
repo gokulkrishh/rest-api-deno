@@ -1,0 +1,7 @@
+{
+  "quiet": false,
+  "deno_args": ["--allow-net", "--allow-read", "--allow-write"],
+  "execute": {
+    ".js": ["deno", "run"]
+  }
+}
