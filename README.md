@@ -23,7 +23,7 @@ curl -fsSL https://deno.land/x/install/install.sh | sh
 **Step 2**: Run
 
 ```bash
-deno run --allow-net --allow-read ./index.js
+deno run --allow-net --allow-read --allow-write ./index.js
 ```
 
 **Note**:
