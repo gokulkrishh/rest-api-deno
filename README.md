@@ -6,15 +6,9 @@
 
 - Deno is secure run time for javascript & typescript
 
-### Contents
-
-- [Documentation](https://doc.deno.land/https/github.com/denoland/deno/releases/latest/download/lib.deno.d.ts)
-- [Oak middleware](https://oakserver.github.io/oak/)
-
 ### Goal
 
 - Create a simple todo rest api.
-- Use deno [standard library](https://deno.land/std/) for features.
 - Use oak middleware for routing etc,
 - Expose routes for **GET, POST, DELETE and PUT** methods.
 
@@ -41,6 +35,7 @@ deno run --allow-net --allow-read ./index.js
 
 ```bash
 deno install --unstable --allow-read --allow-run -f https://deno.land/x/denon/denon.ts
+
 denon ./index.js
 ```
 
@@ -54,13 +49,13 @@ denon ./index.js
 
 ├── README.md
 ├── config.js
-├── controllers/
-│   └── todos/
+├── controllers
+│   └── todos
 │   ├── delete.js
 │   ├── get.js
 │   ├── post.js
 │   └── put.js
-├── data/
+├── data
 │   └── todos.json
 ├── index.js
 └── router.js
