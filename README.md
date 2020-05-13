@@ -47,7 +47,7 @@ denon ./index.js
 
 ### Project Structure
 
-├── README.md
+.
 ├── config.js
 ├── controllers
 │   └── todos
@@ -60,13 +60,13 @@ denon ./index.js
 ├── index.js
 └── router.js
 
-### API's
+### API list
 
-**`GET`** - /
-**`GET`** - /todos
-**`POST`** - /todos (form data)
-**`PUT`** - /todos/:id (form data)
-**`DELETE`** - /todos/:id
+- **`GET`** - /
+- **`GET`** - /todos
+- **`POST`** - /todos (form data)
+- **`PUT`** - /todos/:id (form data)
+- **`DELETE`** - /todos/:id
 
 ##### MIT Licensed
 
