@@ -14,24 +14,24 @@
 
 ## Install & Run
 
-**`Step 1:`** Install
+**Step 1**: Install
 
 ```bash
 curl -fsSL https://deno.land/x/install/install.sh | sh
 ```
 
-**`Step 2:`** Run
+**Step 2**: Run
 
 ```bash
 deno run --allow-net --allow-read ./index.js
 ```
 
-**Note:**
+**Note**:
 
 > --allow-net is to allow network access
 > --allow-read is to allow read access to file system
 
-**`Step 3 (optional):`** [denon](https://github.com/eliassjogreen/denon) for deno like [nodemon](https://www.npmjs.com/package/nodemon) for node
+**Step 3** (optional): [denon](https://github.com/eliassjogreen/denon) for deno like [nodemon](https://www.npmjs.com/package/nodemon) for node
 
 ```bash
 deno install --unstable --allow-read --allow-run -f https://deno.land/x/denon/denon.ts
@@ -39,9 +39,9 @@ deno install --unstable --allow-read --allow-run -f https://deno.land/x/denon/de
 denon ./index.js
 ```
 
-**`Step 4:`** Open [https://localhost:8000](https://localhost:8000)
+**Step 4**: Open [https://localhost:8000](https://localhost:8000)
 
-**Note:**
+**Note**:
 
 > Denon uses `.denonrc.json` file in root for configuration
 
