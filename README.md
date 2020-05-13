@@ -12,7 +12,7 @@
 - Use oak middleware for routing etc,
 - Expose routes for **GET, POST, DELETE and PUT** methods.
 
-## Install & Run
+## Installation & Run
 
 **Step 1**: Install
 
