@@ -1,4 +1,4 @@
-# rest-api-deno
+# [rest-api-deno](https://rest-api-deno.fly.dev/todos)
 
 > Rest API's using deno runtime
 
@@ -11,6 +11,8 @@
 - Create a simple todo rest api.
 - Use oak middleware for routing etc,
 - Expose routes for **GET, POST, DELETE and PUT** methods.
+
+### [Demo](https://rest-api-deno.fly.dev/)
 
 ## Installation & Run
 
