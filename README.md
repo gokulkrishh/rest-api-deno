@@ -12,7 +12,34 @@
 - Use oak middleware for routing etc,
 - Expose routes for **GET, POST, DELETE and PUT** methods.
 
+### API list
+
+- **`GET`** - /
+- **`GET`** - /todos
+- **`POST`** - /todos (form data)
+- **`PUT`** - /todos/:id (form data)
+- **`DELETE`** - /todos/:id
+
 ### [Demo](https://rest-api-deno.fly.dev/)
+
+
+### Project Structure
+
+```bash
+.
+├── README.md
+├── config.js
+├── controllers
+│   └── todos
+│       ├── delete.js
+│       ├── get.js
+│       ├── post.js
+│       └── put.js
+├── data
+│   └── todos.json
+├── index.js
+└── router.js
+```
 
 ## Installation & Run
 
@@ -54,31 +81,6 @@ docker build -t app . && docker run -it --init -p 8000:8000 app
 
 > Denon uses `.denonrc.json` file in root for configuration
 
-### Project Structure
-
-```bash
-.
-├── README.md
-├── config.js
-├── controllers
-│   └── todos
-│       ├── delete.js
-│       ├── get.js
-│       ├── post.js
-│       └── put.js
-├── data
-│   └── todos.json
-├── index.js
-└── router.js
-```
-
-### API list
-
-- **`GET`** - /
-- **`GET`** - /todos
-- **`POST`** - /todos (form data)
-- **`PUT`** - /todos/:id (form data)
-- **`DELETE`** - /todos/:id
 
 ##### MIT Licensed
 
