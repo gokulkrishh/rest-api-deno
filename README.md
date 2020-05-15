@@ -27,6 +27,8 @@
 
 ```bash
 .
+├── Dockerfile
+├── LICENSE
 ├── README.md
 ├── config.js
 ├── controllers
@@ -37,6 +39,7 @@
 │       └── put.js
 ├── data
 │   └── todos.json
+├── fly.toml
 ├── index.js
 └── router.js
 ```
@@ -70,16 +73,16 @@ deno install --unstable --allow-read --allow-run -f https://deno.land/x/denon/de
 denon ./index.js
 ```
 
+**Note**:
+
+> Denon uses `.denonrc.json` file in root for configuration
+
 **Step 5** (optional): To run using docker
 
 ```bash
 
 docker build -t app . && docker run -it --init -p 8000:8000 app
 ```
-
-**Note**:
-
-> Denon uses `.denonrc.json` file in root for configuration
 
 ### Deployment
 
