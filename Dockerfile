@@ -1,15 +1,8 @@
-FROM ubuntu
+FROM hayd/alpine-deno:1.0.0
+WORKDIR /app
 
-RUN apt-get update
-RUN apt-get install -y curl unzip
+# These steps will be re-run upon each file change in your working directory:
+COPY . ./
 
-RUN curl -fsSL https://deno.land/x/install/install.sh | sh
-RUN ln -s /root/.deno/bin/deno /usr/local/bin
-
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-
-COPY . /usr/src/app
-
-EXPOSE $PORT
-CMD ["deno", "run", "--allow-net", "--allow-read", "--allow-write", "index.js"]
+# Added to ENTRYPOINT of base image.
+CMD ["run", "--allow-net", "--allow-read", "--allow-write", "index.js"]

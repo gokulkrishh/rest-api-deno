@@ -31,7 +31,9 @@ deno run --allow-net --allow-read --allow-write ./index.js
 > --allow-net is to allow network access
 > --allow-read is to allow read access to file system
 
-**Step 3** (optional): [denon](https://github.com/eliassjogreen/denon) for deno like [nodemon](https://www.npmjs.com/package/nodemon) for node
+**Step 3**: Open [https://localhost:8000](https://localhost:8000)
+
+**Step 4** (optional): [denon](https://github.com/eliassjogreen/denon) for deno like [nodemon](https://www.npmjs.com/package/nodemon) for node
 
 ```bash
 deno install --unstable --allow-read --allow-run -f https://deno.land/x/denon/denon.ts
@@ -39,7 +41,12 @@ deno install --unstable --allow-read --allow-run -f https://deno.land/x/denon/de
 denon ./index.js
 ```
 
-**Step 4**: Open [https://localhost:8000](https://localhost:8000)
+**Step 5** (optional): To run using docker
+
+```bash
+
+docker build -t app . && docker run -it --init -p 8000:8000 app
+```
 
 **Note**:
 
