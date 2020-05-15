@@ -81,6 +81,12 @@ docker build -t app . && docker run -it --init -p 8000:8000 app
 
 > Denon uses `.denonrc.json` file in root for configuration
 
+### Deployment
+
+Deployed using [https://fly.io/](https://fly.io/) with docker.
+
+[Deployment Steps](https://fly.io/docs/speedrun/#start-your-speed-run-now)
+
 
 ##### MIT Licensed
 
