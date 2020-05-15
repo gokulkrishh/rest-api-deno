@@ -63,7 +63,7 @@ deno run --allow-net --allow-read --allow-write ./index.js
 > --allow-net is to allow network access
 > --allow-read is to allow read access to file system
 
-**Step 3**: Open [https://localhost:8000](https://localhost:8000)
+**Step 3**: Open [https://localhost:8080](https://localhost:8080)
 
 **Step 4** (optional): [denon](https://github.com/eliassjogreen/denon) for deno like [nodemon](https://www.npmjs.com/package/nodemon) for node
 
@@ -81,7 +81,7 @@ denon ./index.js
 
 ```bash
 
-docker build -t app . && docker run -it --init -p 8000:8000 app
+docker build -t app . && docker run -it --init -p 8080:8080 app
 ```
 
 ### Deployment
